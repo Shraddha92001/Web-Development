@@ -1,19 +1,12 @@
+@import "mixin";
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-@mixin flexprop{
-    flex-direction: column;
-    display: flex;
-}
 
-@mixin h1p{
-        color:brown;
-        font-size: 10rem - 5rem;  /* - * / + (== , !=) ,<, > , %, <=, >=,  Operators in SCSS */
-        letter-spacing: 0.3rem;
-}
 
 .main_header{
     @include flexprop;
