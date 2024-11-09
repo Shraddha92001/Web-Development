@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 2</title>
+</head>
+<body>
+    <div class="name-container">
+        <h1>Registration</h1>
+        <input type="text" name="nameInput" id="nameID" placeholder="Enter Name"> 
+        <button id="addname">Add Name</button>
+        <ul id="taskList"></ul>
+
+        <input type="number" name="ageInput" id="ageID" placeholder="Enter Age"> 
+        <button id="addage">Add age</button>
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#addname").click(function(){
+            const taskText = $("#nameID").val().trim();
+
+            if(taskText){
+                const newTask= $(
+                    `
+                <li class="task">
+                    <span class="task-text">${taskText}</span>
+                    <span class="remove-btn">✖</span>
+                </li>
+            `
+                );
+
+                $("#taskList").append(newTask);
+                $('#taskInput').val('');
+            }
+        });
+
+        $('#taskList').on('click', '.task-text', function () {
+            $(this).toggleClass('completed');
+        });
+
+        // Remove Task
+        $('#taskList').on('click', '.remove-btn', function () {
+            $(this).parent().remove();
+        });
+    });
+
+    $(document).ready(function(){
+        $("#addage").click(function(){
+            const taskText = $("#ageID").val().trim();
+
+            if(taskText){
+                const newTask= $(
+                    `
+                <li class="task">
+                    <span class="task-text">${taskText}</span>
+                    <span class="remove-btn">✖</span>
+                </li>
+            `
+                );
+
+                $("#taskList").append(newTask);
+                $('#taskInput').val('');
+            }
+        });
+
+        $('#taskList').on('click', '.task-text', function () {
+            $(this).toggleClass('completed');
+        });
+
+        // Remove Task
+        $('#taskList').on('click', '.remove-btn', function () {
+            $(this).parent().remove();
+        });
+    });
+</script>
+</html>

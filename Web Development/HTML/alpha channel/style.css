@@ -1,0 +1,42 @@
+h1{
+    color: brown;
+}
+
+p{
+    color: rgba(255, 0, 0, 0.6);
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    padding: 25px;
+    margin: 25px;
+    background-color: rgb(149, 102, 1.5);
+}
+
+#box1{
+    height: 100px;
+    width: 100px;
+    padding: 25px;
+    margin: 25px;
+    background-color:rgba(0, 0,2550, 0.5);
+    display: inline-block;
+}
+
+#box2{
+    height: 100px;
+    width: 100px;
+    padding: 25px;
+    margin: 25px;
+    display: inline-block;
+    background-color: rgba(0, 0,2550, 0.75);
+}
+
+#box3{
+    height: 100px;
+    width: 100px;
+    padding: 25px;
+    display: inline-block;
+    margin: 25px;
+    background-color: rgba(0, 0,2550, 1);
+}

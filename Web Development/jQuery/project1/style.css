@@ -1,0 +1,28 @@
+/* style.css */
+.todo-container {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.remove-btn {
+    color: red;
+    cursor: pointer;
+}

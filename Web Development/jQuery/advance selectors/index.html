@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advance selector of JQUERy</title>
+    <script src="/JQUERY Practice/advance selectors/jquery-3.7.1.min.js"></script>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            #box{
+                padding: 10px;
+                border: 1px solid #000;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <h1>JQUERY ADVANCE SELECTORS</h1><br>
+    <div id="box" class="container-1">
+        <h1 id="head1"> textbox 1</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+             Magnam repellat corrupti minus dolor distinctio at quibusdam error 
+             praesentium doloribus, quasi dolore nisi i
+            ste mollitia quidem a? Delectus sit eum itaque?</p>
+    </div>
+    <br><br>
+
+    <div id="box" class="container-2">
+        <h1 id="head2"> textbox 2</h1>
+        <p id="container2p">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+             Magnam repellat corrupti minus dolor distinctio at quibusdam error 
+             praesentium doloribus, quasi dolore nisi i
+            ste mollitia quidem a? Delectus sit eum itaque?</p>
+    </div>
+
+    <ul id="list">
+        <li>orange</li>
+        <li class="test"> banana</li>
+        <li>mango</li>
+        <li class="test"> apple</li>
+        <li>lichi</li>
+    </ul>
+
+    <script>
+        $(document).ready(function(){
+            // $("*").css("color", "red");
+
+            $("#head1 , #head2").css("border" ,"solid 5px green")
+            $("#container2p ").css("color" , "blue");
+            $(".container-2").css("background", "yellow")
+            $("#list").css("color", "green");
+            $("#list li").css("color", "orange");
+            $("#list .test").css("color", "blue");
+            $("li:first").css("border", "dotted 5px pink");
+            $("li:last").css("border", "solid 5px orange");
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main_header {
+  flex-direction: column;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  background-color: aquamarine;
+}
+.main_header h1 {
+  color: brown;
+  font-size: 5rem; /* - * / + (== , !=) ,<, > , %, <=, >=,  Operators in SCSS */
+  letter-spacing: 0.3rem;
+}
+.main_header h1:hover {
+  color: greenyellow;
+}
+.main_header p {
+  color: brown;
+  font-size: 5rem; /* - * / + (== , !=) ,<, > , %, <=, >=,  Operators in SCSS */
+  letter-spacing: 0.3rem;
+}
+.main_header p:hover {
+  color: greenyellow;
+}/*# sourceMappingURL=main.css.map */

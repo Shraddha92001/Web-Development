@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin flexprop{
+    flex-direction: column;
+    display: flex;
+}
+
+@mixin h1p{
+        color:brown;
+        font-size: 10rem - 5rem;  /* - * / + (== , !=) ,<, > , %, <=, >=,  Operators in SCSS */
+        letter-spacing: 0.3rem;
+}
+
+.main_header{
+    @include flexprop;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    // display: -ms-grid;
+    place-items: center;
+    background-color: aquamarine;
+    
+    // nesting
+    h1{
+        
+        @include h1p;
+        &:hover {
+            color:greenyellow;
+        }
+    }
+    
+    p{
+        @include h1p;
+
+        &:hover{
+            color:greenyellow;
+        }
+    }
+}
+

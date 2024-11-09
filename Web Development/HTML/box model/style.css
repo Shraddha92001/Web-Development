@@ -1,0 +1,47 @@
+
+#box1{
+    height: 200px;
+    background-color: aqua;
+    width: 200px;
+    /* border-radius: 50%; */
+    /* align-items: center; */
+    border-style:groove;
+    /* padding: 50%; */
+    border-color: black;
+}
+.boxCenter{
+    text-align: center;
+    border-style:double ;
+    /* border-radius: 50px; */
+    padding-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    height: 150px;
+    width: 500px;
+    /* align-items: center; */
+    text-align: center;
+    background-color: burlywood;
+}
+
+.firstbox{
+    height: 50px;
+    width: 50px;
+    border-style: double;
+    background-color: burlywood;
+}
+
+.secondBox{
+    height: 50px;
+    width: 50px;
+    border-style: double;
+    background-color: rgb(227, 198, 160);
+}
+
+#thirdBox{
+    height: 50px;   
+    width: 50px;
+    border-style: double;
+    background-color: rgb(223, 131, 11);
+}
+

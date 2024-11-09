@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Script src="/JQUERY Practice/advance selectors/jquery-3.7.1.min.js"></Script>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            #box{
+                background-color: aqua;
+                padding: 10px;
+                border: 1px solid #000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>JQUERY Mouse events</h1>
+    <div id="box" class="Container">
+        <h1>text box</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, cupiditate.
+        </p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#box").click(function(){
+                $("#box").css("background-color","green");
+            })
+
+            $("#box").dblclick(function(){
+                $("#box").css("background-color","orange");
+            })
+
+            $("#box").contextmenu(function(){  // for right click
+                $("#box").css("background-color","blue");
+            })
+
+            $("#box").mouseenter(function(){  // 
+                $("#box").css("background-color","tan");
+            })
+
+            $("#box").mouseleave(function(){  // 
+                $("#box").css("background-color","yellow");
+            })
+        })
+    </script>
+</body>
+</html>

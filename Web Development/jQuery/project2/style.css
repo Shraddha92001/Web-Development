@@ -1,0 +1,10 @@
+.name-container{
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.remove-btn {
+    color: red;
+    cursor: pointer;
+}

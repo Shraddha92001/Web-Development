@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/HTML/jQuery Practice/advance selectors/jquery-3.7.1.min.js"></script>
+    <style>
+        body{ font-family: 'Segoe UI', Tahoma, Verdana, sans-serif}
+        #box{
+            background: palegreen;
+            padding: 10px;
+            border: 5px solid red;
+        }
+
+        #box2{
+            background: palegreen;
+            padding: 10px;
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Keyboard events</h1>
+    </header>
+
+    <body >
+        <div id="box" class="container">
+            <h1>This is Div 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui quis doloremque excepturi est exercitationem magnam dolores quia inventore ducimus voluptate!</p>
+        </div>
+<br><br>
+        <div id="box2" class="container">
+            <h1>This is Div 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui quis doloremque excepturi est exercitationem magnam dolores quia inventore ducimus voluptate!</p>
+        </div>
+
+    </body>
+
+    <script>
+        $(document).ready(function(){
+            $("#text").css("background-color", "yellow")
+            $('body').keypress(function(){
+                $(this).css("background-color", 'pink')
+            })
+
+            $('body').keyup(function(){
+                $(this).css("background-color", 'green')
+            })
+
+            $('body').keydown(function(){
+                $(this).css("background-color", 'blue')
+            })
+        })  
+    </script>
+    
+</body>
+</html>

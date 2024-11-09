@@ -1,0 +1,47 @@
+*{
+    background-color:rgb(62, 48, 75) ;
+}
+
+#box{
+    text-align: center;
+    background-color:blue;
+    text-decoration: wavy;
+}
+
+.color{
+    color:white;
+}
+
+.heading{
+    color: red;
+}
+
+#greenBtn{
+    text-align: left;
+    background-color: green;
+}
+
+#one{
+    text-align: center;
+    color: azure;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* text-decoration:dotted; */
+    line-height: 20px;
+}
+#heading{
+    color:darkgreen;
+    text-align: center;
+    text-decoration: dotted;
+}
+
+.google  {
+    text-align: center;
+    color: gold;
+}
+#two{
+    text-align: center;
+    color:azure;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}

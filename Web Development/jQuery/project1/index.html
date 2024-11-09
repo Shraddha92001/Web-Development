@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="todo-container">
+        <h2>To-Do List</h2>
+        <input type="text" id="taskInput" placeholder="Enter new task...">
+        <button id="addTaskBtn">Add Name</button>
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+<script>
+    // script.js
+    $(document).ready(function () {
+        // Add Task
+        $('#addTaskBtn').click(function () {
+            const taskText = $('#taskInput').val().trim();
+
+            if (taskText) {
+                // Create a new list item with task text and remove button
+                const newTask = $(`
+                <li class="task">
+                    <span class="task-text">${taskText}</span>
+                    <span class="remove-btn">✖</span>
+                </li>
+            `);
+
+                // Append new task to the list
+                $('#taskList').append(newTask);
+
+                // Clear the input field
+                $('#taskInput').val('');
+            }
+        });
+
+        // Mark Task as Complete by toggling 'completed' class
+        $('#taskList').on('click', '.task-text', function () {
+            $(this).toggleClass('completed');
+        });
+
+        // Remove Task
+        $('#taskList').on('click', '.remove-btn', function () {
+            $(this).parent().remove();
+        });
+    });
+
+</script>
+
+</html>
